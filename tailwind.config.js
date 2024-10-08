@@ -1,4 +1,5 @@
 module.exports = {
+  mode: "jit",
   content: ["./src/**/*.{html,js}"],
   presets: [],
   darkMode: "media", // or 'class'
@@ -104,7 +105,7 @@ module.exports = {
       80: "20rem",
       96: "24rem",
       huge: "6rem",
-      page:'2.5rem'
+      page: "2.5rem",
     },
     animation: {
       none: "none",

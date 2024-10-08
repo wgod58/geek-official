@@ -12,18 +12,20 @@
 }
 
 .App {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: #f9f9f9;
+  color: #444444;
 }
 
-.App-header {
-  background-color: #282c34;
+.Content {
+  background-color: #f9f9f9;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  /* color: white; */
 }
 
 .App-link {
@@ -40,34 +42,57 @@
 }
 
 .background-container {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; 垂直居中  */
-  /* height: 100vh; 占满整个视窗高度 */
   background-image: url("test.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-/* 容器内的文字 */
-.text-content {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff; /* 文字颜色为白色 */
-  padding: 20px; /* 内边距 */
-  border-radius: 10px; /* 圆角边框 */
-  text-align: center; /* 文字居中对齐 */
+.background-container2 {
+  background-image: url("bg01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+.text-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
 
 .button {
-    /* border-radius: 0; */
-    padding: 0.25rem 1rem;
-    background-color: black;
-    color: white;
-  }
-  .button:hover {
-    
-    background-color: white;
-    color: black;
-  }
+  /* border-radius: 0; */
+  padding: 0.5rem 1.25rem;
+  background-color: black;
+  color: white;
+}
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.about {
+  border-radius: 80px 20px 80px 20px;
+  box-shadow: 2px 2px 12px -2px rgb(100 100 100 / 50%);
+}
+
+.introduce {
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 2px 2px 12px -2px rgb(100 100 100 / 50%);
+}
+
+.why-section {
+  /* border-top: 0.5px solid #444444; */
+  border-bottom: 0.5px solid #444444;
+}
+
+.name {
+  border-bottom: 1px solid #040404;
+}
+
+/* summary {
+  display: flex;
+  align-items: center;
+} */
+
