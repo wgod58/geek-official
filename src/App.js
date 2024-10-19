@@ -9,8 +9,8 @@ function Collapse({ title, content }) {
   const [state, setState] = useState(true);
 
   return (
-    <section className="grid place-items-center pt-8">
-      <label>
+    <section className="grid place-items-center pt-8 max-w-3xl">
+      <label className="w-full">
         <input
           className="peer/showLabel absolute scale-0"
           type="checkbox"
@@ -18,7 +18,7 @@ function Collapse({ title, content }) {
             setState(!state);
           }}
         />
-        <span className="block md:max-h-16 max-h-12  max-w-3xl overflow-hidden rounded-lg px-4 py-4  shadow-lg transition-all duration-300 peer-checked/showLabel:max-h-full">
+        <span className="block md:max-h-16 max-h-12 w-full  overflow-hidden rounded-lg px-4 py-4  shadow-lg transition-all duration-300 peer-checked/showLabel:max-h-full">
           <div className="py-2 flex cursor-pointer  justify-between ">
             <div className="font-bold md:text-xl text-base">{title}</div>
             <div>
@@ -35,23 +35,21 @@ function Collapse({ title, content }) {
 
 function App() {
   return (
-    <div className="App font-serif  flex justify-center items-center">
+    <div className="App font-serif">
       <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="mx-auto px-4 py-4 flex justify-between items-center">
           Logo
         </div>
       </header>
-      <div className=" Content pt-14">
+      <div className="Content pt-14">
         <div className="background-container flex flex-col items-center w-full ">
           <div className="text-content w-full py-48">
-            <p className="text-xl md:text-3xl py-4 font-semibold">
-              SRI Solution
-            </p>
+            <p className="text-xl md:text-3xl py-4 font-semibold">吉客 GEEK</p>
             <p className="text-xl md:text-4xl font-extrabold py-4">
-              FAANG講師手把手帶領進入一線外商
+              FAANG講師手把手帶領系統化學習
             </p>
-            <p className="text-xl md:text-3xl py-4 font-semibold">
-              針對想進入FAANG的人
+            <p className="text-xl md:text-2xl py-4 font-semibold">
+              針對想進入一線外商的工程師
             </p>
             <button className="button mt-4 rounded-2xl shadow-md max-w-min font-bold whitespace-nowrap text-3xl">
               預約免費技術諮詢
@@ -93,9 +91,10 @@ function App() {
           </div>
         </div>
         <div className="py-20">
-          <div className="font-serif text-4xl pb-20 font-bold">SRI Solution</div>
-          <div className="flex flex-col md:flex-row gap-10">
-            
+          <div className="font-serif text-4xl pb-20 font-bold">
+            SRI Solution
+          </div>
+          <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
             <div className="max-w-2xl ">
               <div className="font-serif text-3xl py-4 font-bold">學習地圖</div>
               <div>
@@ -123,7 +122,7 @@ function App() {
               <img className="rounded-3xl" src={map} alt="map" />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row-reverse pt-20 gap-10">
+          <div className="flex flex-col md:flex-row-reverse pt-20 gap-10 items-center justify-center">
             <div className="max-w-2xl ">
               <div className="font-serif text-3xl py-4 font-bold">
                 系統化學習
@@ -150,21 +149,21 @@ function App() {
               <img className="rounded-3xl" src={work} alt="work" />
             </div>
           </div>
-          <div className="flex flex-col md:flex-row pt-20 gap-10">
+          <div className="flex flex-col md:flex-row pt-20 gap-10 items-center justify-center">
             <div className="max-w-2xl">
               <div className="font-serif text-3xl py-4 font-bold">專屬頻道</div>
               <div>
                 <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  專屬頻道與講師溝通，獲得最直接的幫助
+                  會員專屬頻道與講師直接溝通
                 </p>
                 <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  協助解答您的疑惑獲得更多解答
+                  協助解答您的疑惑獲得精確的解答
                 </p>
                 <p className="text-xl  font-semibold max-w-3xl pt-4">
                   定期直播問答幫助你在最短時間內解決問題
                 </p>
                 <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  專屬個人的 Mock interview
+                  另外可與其他學員建立連結，建立軟體工程師人脈
                 </p>
               </div>
             </div>
@@ -224,92 +223,39 @@ function App() {
         </div>
 
         <Collapse
-          title="非本系畢業無相關經驗能不能參加課程？"
-          content="課程適合有決心想進入FAANG的人
-              零經驗或轉職工程師，透過該課程能夠清楚該如何安排自身職涯發展，規劃出清晰的道路成為FAANG工程師
-              有經驗工程師，能在最短時間內調整正確方向，並且在面試的準備上獲得最直接的幫助"
+          title="非本系或無相關經驗能不能參加課程？"
+          content="透過該課程非本科或無經驗者能夠清楚，如何安排職涯發展，規劃出清晰的道路一步一步的進步。而有經驗工程師，能在最短時間內調整正確方向，並且在面試的準備上獲得最直接的幫助"
         />
         <Collapse
           title="能與FAANG講師一對一溝通嗎？"
-          content="會有專屬學員頻道，學員能透過頻道與FAANG講師進行溝通
-              每週會有固定時間安排一對一的諮詢，針對你的問題去做解析"
+          content="會有專屬學員頻道，學員能透過頻道與FAANG講師直接進行溝通。並且每週會定期舉辦問題QA諮詢，在線上一對一針對你的問題去做回覆"
         />
         <Collapse
-          title="上課方式是什麼？"
-          content="課程是小班制的線上教學，每週會有固定時間，FAANG講師一對一解惑
-              並且有專屬頻道供學員發問問題 如何幫助我找到FAANG工作？
-              兩位FAANG講師手把手教學，從履歷包裝到面試技巧，以及演算法系統設計題目的練習，一步一步帶領你完成
-              最全面的分析與實戰經驗傳授，讓您能及早準備不浪費任何時間，在最短時間內成為FAANG工程師"
+          title="要如何幫助我進入一線外商？"
+          content="專屬的任務系統以及系統化教學，讓你在學習的道路上有規劃與方向，幫助你有系統的學習，不浪費任何時間在不必要的事情上"
         />
+        <Collapse
+          title="課程內容是什麼？"
+          content="課程內容會包含：職涯規劃、FAANG招聘形勢、簡歷準備、BQ準備、算法與系統設計、面試技巧。並且提供學員Mock interview"
+        />
+        <Collapse
+          title="提供什麼就業相關的幫助嗎？"
+          content="提供模擬面試 履歷健檢 面試安排 面試技巧(演算法 系統設計 BQ 薪資 等等) 面試陪跑"
+        />
+        <iframe
+          src="https://fang81.ck.page/4b8f49b1b9"
+          name="iframe_a"
+          height="450px"
+          width="100%"
+          title="Iframe Example"
+          scrolling="no"
+        ></iframe>
 
-        <Collapse
-          title="有課程大綱嗎"
-          content="正式上課前 mentor 會與你進行一次課前深度訪談，根據你的程度與目標，提供客製化的完整學習大綱"
-        />
-        <Collapse
-          title="課程畢業後，有就業媒合嗎？"
-          content="我們沒有提供就業媒合，因為好的職缺不會有就業媒合，目前已畢業學員，零經驗轉職軟體工程師第一份平均月薪 50k 以上，有工作經驗的平均跳槽 +20%"
-        />
-        <Collapse
-          title="提供了哪些就業相關的幫助？"
-          content="1. 履歷修改、模擬面試
-2. 教你如何篩選好公司
-3. 面試優先順序安排的建議
-4. 面試問題反饋、修正
-5. 面試技巧（談薪資、behavior question 應對、promo 自己）"
-        />
-
-        <div>FAANG面試指南</div>
-        <div>業界唯一 FAANG講師 親自授課</div>
-        <div>
-          這份路線圖是您通往破解 FAANG
-          面試成功之路的最佳指南。無論您是初露鋒芒的軟體工程師，還是目標晉升為高階職位的資深專業人士，這份路線圖都能為您提供在程式設計面試中取得成功所需的洞見、策略和工具。
-          該路線圖的設計重點在於加速學習並以模式為基礎，避免了讓人不知所措的成千上萬個問題。它強調掌握解決大部分問題的關鍵模式。最終我們歸納出ＸＸ
-          方法
+        <div className="container pt-20 pb-10">
+          <div className="text-lg">
+            <p>Gike-Geek © 2024 All Rights Reserved</p>
+          </div>
         </div>
-
-        <div>嚮往成為FAANG軟體工程師</div>
-        <div>但卻不知道要如何規劃下一步</div>
-        <div>1. 想進入FAANG，卻不知道如何準備面試</div>
-        <div>不知道要如何準備FAANG面試</div>
-        <div>非本科畢業的轉職軟體工程師，如何在五年內成功進入FAANG</div>
-        <div>還需要學習多少知識準備多久，才夠資格參加面試</div>
-        <div>是否通過面試的人都是絕頂天才？</div>
-        <div>2. 不知道如何準備演算法，系統設計面試</div>
-        <p>刷了上百題的Leetcode卻還是無法通過演算法面試</p>
-        <p>學習了很多網路知識，卻還是對於系統設計相當陌生</p>
-        <p>非本科轉職有辦法通過面試嗎？</p>
-        <div>3. 如何獲取FAANG的面試機會</div>
-        <div>不知道該透過何種方式，什麼樣的方法才能獲得FAANG面試機會</div>
-        <div>沒有相關經驗或者非本科系是否意味著沒辦法獲得面試機會</div>
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
-
-        <p>
-          常見問題 非本系畢業無相關經驗，能不能參加課程會適合我嗎？
-          課程適合有決心想進入FAANG的人
-          零經驗或轉職工程師，透過該課程能夠清楚該如何安排自身職涯發展，規劃出清晰的道路成為FAANG工程師
-          有經驗工程師，能在最短時間內調整正確方向，並且在面試的準備上獲得最直接的幫助
-          上課方式是什麼？
-          課程是小班制的線上教學，每週會有固定時間，FAANG講師一對一解惑
-          並且有專屬頻道供學員發問問題 如何幫助我找到FAANG工作？
-          兩位FAANG講師手把手教學，從履歷包裝到面試技巧，以及演算法系統設計題目的練習，一步一步帶領你完成
-          最全面的分析與實戰經驗傳授，讓您能及早準備不浪費任何時間，在最短時間內成為FAANG工程師
-          能與FAANG講師一對一溝通嗎？
-          會有專屬學員頻道，學員能透過頻道與FAANG講師進行溝通
-          每週會有固定時間安排一對一的諮詢，針對你的問題去做解析
-        </p>
       </div>
     </div>
   );
