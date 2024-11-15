@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  max-width: 3rem;
 }
 
 .App {
@@ -42,14 +45,7 @@
 }
 
 .background-container {
-  background-image: url("test.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.background-container2 {
-  background-image: url("bg01.jpg");
+  background-image: url("./image/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,7 +59,7 @@
 
 .button {
   /* border-radius: 0; */
-  padding: 0.5rem 1.25rem;
+  padding: 1rem 1.5rem;
   background-color: black;
   color: white;
 }
@@ -95,4 +91,3 @@
   display: flex;
   align-items: center;
 } */
-
