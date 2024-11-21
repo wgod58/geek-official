@@ -149,7 +149,7 @@ function App() {
                   透過系統化教學與專屬任務系統
                 </p>
                 <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  你會知道你該學什麼，專注在正確的事情上才是重點
+                  你會階段性的完成學習目標，把握關鍵重點形成完整知識框架
                 </p>
                 <p className="text-xl  font-semibold max-w-3xl pt-4">
                   職涯規劃 FAANG招聘形勢 簡歷準備 BQ準備 算法準備 面試準備+技巧
@@ -168,7 +168,9 @@ function App() {
           </div>
           <div className="flex flex-col md:flex-row pt-20 gap-10 items-center justify-center">
             <div className="max-w-2xl">
-              <div className="font-serif text-3xl py-4 font-bold">專屬頻道</div>
+              <div className="font-serif text-3xl py-4 font-bold">
+                專屬社群平台
+              </div>
               <div>
                 <p className="text-xl  font-semibold max-w-3xl pt-4">
                   會員專屬頻道與講師直接溝通
@@ -225,13 +227,13 @@ function App() {
                     熟悉演算法與系統設計
                   </p>
                   <p className="  font-semibold max-w-3xl pt-1">
-                    北美FAANG大廠資深後端開發
+                    北美FAANG大廠資深軟體工程師
                   </p>
                   <p className="  font-semibold max-w-3xl pt-1">
-                    拿到頂尖美國offer10+，刷題1000+ 精通各類算法題型
+                    累積1000+演算法題解，掌握各類題型要點
                   </p>
                   <p className="  font-semibold max-w-3xl pt-1">
-                    豐富的面試和面試輔導經驗，提供簡潔易懂並且有效的針對性輔導
+                    豐富面試輔導經驗，提供清晰且實用的針對性輔導
                   </p>
                 </div>
               </div>
@@ -241,7 +243,7 @@ function App() {
 
         <Collapse
           title="非本系或無相關經驗能不能參加課程？"
-          content="透過該課程非本科或無經驗者能夠清楚，如何安排職涯發展，規劃出清晰的道路一步一步的進步。而有經驗工程師，能在最短時間內調整正確方向，並且在面試的準備上獲得最直接的幫助"
+          content="本課程對非本系或無相關經驗者而言，提供完整的學習路徑，幫助您規劃職涯方向；對在職工程師來說，能快速補強算法觀念，提升面試競爭力。課程會依照您的程度調整進度，確保學習成效。"
         />
         <Collapse
           title="能與FAANG講師一對一溝通嗎？"
@@ -263,7 +265,7 @@ function App() {
         <div className="w-full">
           <div className="w-full py-32 flex flex-col items-center">
             <p className="text-xl md:text-2xl font-extrabold pt-5">
-              針對想進入一線外商大廠的工程師
+              針對進入一線外商大廠的工程師
             </p>
             <ul className="list-disc text-left text-xl md:text-2xl font-semibold">
               <li className="pt-5">系統教學</li>
