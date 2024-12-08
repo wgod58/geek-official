@@ -7,6 +7,7 @@ import teacher2 from "./image/teacher2.jpg";
 import "./App.css";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function Collapse({ title, content }) {
   const [state, setState] = useState(true);
@@ -39,6 +40,7 @@ function Collapse({ title, content }) {
 function App() {
   return (
     <div className="App font-serif">
+      <SpeedInsights />
       <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
         <div
           className="mx-auto px-1 py-1 flex justify-between items-center"
