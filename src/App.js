@@ -3,7 +3,7 @@ import work from "./image/work.jpg";
 import teach from "./image/teach.jpg";
 import logo from "./image/logo.png";
 import teacher1 from "./image/teacher1.jpg";
-import teacher2 from "./image/teacher2.jpg";
+import teacher2 from "./image/teacher2.png";
 import "./App.css";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { useState } from "react";
@@ -53,19 +53,21 @@ function App() {
       </header>
       <div className="Content pt-14">
         <div className="background-container flex flex-col items-center w-full ">
-          <div className="text-content w-full py-48">
-            <p className="text-xl md:text-3xl py-4 font-semibold">吉客學院</p>
-            <p className="text-xl md:text-3xl font-extrabold py-4">
+          <div className="text-content w-full md:py-48 py-6">
+            <p className="text-xl md:text-3xl md:py-4 py-2 font-extrabold">
+              吉客學院
+            </p>
+            <p className="text-xl md:text-3xl font-extrabold md:py-4 py-2">
               FAANG講師 手把手系統化教學
             </p>
-            <p className="text-xl md:text-2xl py-4 font-semibold">
+            <p className="text-xl md:text-2xl md:py-4 py-2 font-extrabold">
               軟體工程師 x 職涯規劃 x 提升競爭力
             </p>
-            <p className="text-xl md:text-2xl py-4 font-semibold">
+            <p className="text-xl md:text-2xl md:py-4 py-2 font-extrabold">
               針對想進入一線外商的工程師
             </p>
             <button
-              className="button mt-4 rounded-2xl shadow-md max-w-min font-bold whitespace-nowrap text-2xl"
+              className="button mt-4 rounded-2xl shadow-md max-w-min font-bold whitespace-nowrap md:text-2xl text-xl"
               onClick={(event) => {
                 event.preventDefault();
                 window.open("https://page.line.me/428navbh");
@@ -76,64 +78,69 @@ function App() {
           </div>
         </div>
         <div className="about flex flex-col items-center px-12 my-24 py-10">
-          <p className="font-serif text-3xl py-4 font-semibold">關於吉客</p>
-          <p className="text-xl  font-semibold max-w-3xl pt-4">
-            團隊由來自FAANG的資深工程師所組成
+          <p className="font-serif text-xl md:text-3xl md:py-4 py-2 font-semibold">
+            關於吉客
           </p>
-          <p className="text-xl  font-semibold max-w-3xl pt-4">
-            深知要通過FAANG面試時，會遇到的困難與關卡
+          <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+            吉客團隊由來自 FAANG 的資深工程師組成
           </p>
-          <p className="text-xl  font-semibold max-w-3xl pt-4">
-            透過過往的經歷與經驗，歸納出了一套完整的解決方案
+          <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+            對於通過 FAANG 面試過程中可能遇到的困難與挑戰有深刻的理解
           </p>
-          <p className="text-xl  font-semibold max-w-3xl pt-4">
-            系統式教學以及專屬任務系統
+          <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+            憑藉豐富的經歷和實戰經驗，我們總結出了一套完整且高效的解決方案
           </p>
-          <p className="text-xl  font-semibold max-w-3xl pt-4">
-            將最大化你的時間價值幫助你進入一線外商
+          <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+            通過系統化的教學方式，結合專屬的任務系統
           </p>
-
-          <p className="text-xl  font-semibold max-w-3xl pt-4"></p>
+          <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+            致力於幫助學員最大化利用時間價值，邁向一線外商的職場目標。
+          </p>
         </div>
         <div className="background-container why-section w-full">
-          <div className="text-content w-full py-20 flex flex-col items-center">
-            <p className="  font-serif text-3xl  font-semibold pt-10 w-max">
+          <div className="text-content w-full md:py-28 py-8 flex flex-col items-center">
+            <p className="  font-serif md:text-3xl text-xl  font-semibold w-max">
               為何要進入FAANG
             </p>
-            <ul className="list-disc text-left text-3xl font-semibold">
-              <li className="pt-10">豐厚的薪酬</li>
-              <li className="pt-10">挑戰性工作</li>
-              <li className="pt-10">國際影響力</li>
-              <li className="pt-10">個人發展機會</li>
-              <li className="pt-10">優秀的工作環境</li>
+            <ul className="list-disc text-left md:text-3xl text-xl font-semibold">
+              <li className="md:pt-10 pt-4">豐厚的薪酬</li>
+              <li className="md:pt-10 pt-4">挑戰性工作</li>
+              <li className="md:pt-10 pt-4">國際影響力</li>
+              <li className="md:pt-10 pt-4">個人發展機會</li>
+              <li className="md:pt-10 pt-4">優秀的工作環境</li>
             </ul>
           </div>
         </div>
         <div className="py-20">
-          <div className="font-serif text-4xl pb-20 font-bold">
+          <div className="font-serif md:text-4xl text-2xl md:pb-20 pb-10 font-bold">
             SRI 學習計劃
           </div>
           <div className="flex flex-col md:flex-row gap-10 items-center justify-center">
             <div className="max-w-2xl ">
-              <div className="font-serif text-3xl py-4 font-bold">學習地圖</div>
+              <div className="font-serif md:text-3xl text-xl md:py-4 pt-4 font-bold">
+                1. 學習地圖
+              </div>
               <div>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  瞭解如何設定長期與短期目標，並且知悉往後職涯發展的具體路徑
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  瞭解如何設定長期與短期目標
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  你會知道你該學什麼不該學什麼，專注在什麼樣的事情上才是重點
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  知悉往後職涯發展的具體路徑
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  分辨核心技能聚焦最具價值的學習內容
+                </p>
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
                   知道在不同階段需要累積的經驗以及關鍵技術
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  知道什麼才是成為TOP1%頂尖工程師的關鍵
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  探索成為 TOP 1% 頂尖工程師的核心要素
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  面試流程的解析到如何應對不同階段的問題
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  全面解析面試流程，應對各個階段的挑戰與問題
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  學會評估自身能力，並針對性地強化不足之處
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  評估自身能力，發現不足之處並有針對性地進行強化
                 </p>
               </div>
             </div>
@@ -143,23 +150,26 @@ function App() {
           </div>
           <div className="flex flex-col md:flex-row-reverse pt-20 gap-10 items-center justify-center">
             <div className="max-w-2xl ">
-              <div className="font-serif text-3xl py-4 font-bold">
-                系統化學習
+              <div className="font-serif md:text-3xl text-xl md:py-4 pt-4 font-bold">
+                2. 系統化學習
               </div>
               <div>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  透過系統化教學與專屬任務系統
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  透過系統化的教學與專屬任務系統
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  你會階段性的完成學習目標，把握關鍵重點形成完整知識框架
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  逐步達成階段性的學習目標
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  職涯規劃 FAANG招聘形勢 簡歷準備 BQ準備 算法準備 面試準備+技巧
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  把握每個關鍵重點，最終構建完整的知識框架
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  你都會在此系統當中學習到，並且獲得相應的任務安排
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  職涯規劃、FAANG招聘分析、簡歷準備、行為面試、算法訓練，面試流程與實用技巧
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  在系統中全面學習，同時獲得精心設計的任務安排
+                </p>
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
                   有系統的規劃並且獲得最一線情報與幫助
                 </p>
               </div>
@@ -170,21 +180,21 @@ function App() {
           </div>
           <div className="flex flex-col md:flex-row pt-20 gap-10 items-center justify-center">
             <div className="max-w-2xl">
-              <div className="font-serif text-3xl py-4 font-bold">
-                專屬社群平台
+              <div className="font-serif md:text-3xl text-xl md:py-4 pt-4 font-bold">
+                3. 專屬社群平台
               </div>
               <div>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
                   會員專屬頻道與講師直接溝通
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
                   協助解答您的疑惑獲得精確的解答
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  定期直播問答幫助你在最短時間內解決問題
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  定期舉辦直播問答幫助您在最短時間內釐清問題
                 </p>
-                <p className="text-xl  font-semibold max-w-3xl pt-4">
-                  另外可與其他學員建立連結，建立軟體工程師人脈
+                <p className="md:text-xl text-base  font-semibold max-w-3xl pt-4">
+                  與其他學員互動交流，建立軟體工程師人脈
                 </p>
               </div>
             </div>
@@ -193,26 +203,28 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="py-20">
-          <p className="font-serif text-4xl py-4 font-bold">講師介紹</p>
+        <div className="md:py-20 py-10">
+          <p className="font-serif md:text-4xl text-2xl py-4 font-bold">
+            講師介紹
+          </p>
           <div className="flex flex-col md:flex-row gap-10">
             <div className="max-w-2xl introduce">
               <img className="rounded-3xl" src={teacher1} alt="teacher1" />
               <div className="min-height-[20rem] p-4">
-                <div className="text-4xl name py-3">
+                <div className="md:text-4xl text-2xl name py-3">
                   <p>Zedd</p>
                 </div>
                 <div className="font-bold text-xl flex flex-col justify-start">
-                  <p className="  font-semibold max-w-3xl pt-1">
+                  <p className="md:text-xl text-base  font-semibold max-w-3xl pt-1">
                     資深全端工程師
                   </p>
-                  <p className="  font-semibold max-w-3xl pt-1">
+                  <p className="md:text-xl text-base  font-semibold max-w-3xl pt-1">
                     在科技業大裁員時面試上Amazon Yahoo
                   </p>
-                  <p className="  font-semibold max-w-3xl pt-1">
+                  <p className="md:text-xl text-base  font-semibold max-w-3xl pt-1">
                     深入淺出講解面試必問考題，短時間內幫助學員上手
                   </p>
-                  <p className="  font-semibold max-w-3xl pt-1">
+                  <p className="md:text-xl text-base  font-semibold max-w-3xl pt-1">
                     有豐富的一線開發和面試經驗，並擅長行為面試指導
                   </p>
                 </div>
@@ -221,20 +233,20 @@ function App() {
             <div className="max-w-2xl introduce">
               <img className="rounded-3xl" src={teacher2} alt="teacher2" />
               <div className="min-height-[20rem] p-4">
-                <div className=" text-4xl name py-3">
+                <div className="md:text-4xl text-2xl name py-3">
                   <p>Kao</p>
                 </div>
                 <div className="font-bold  text-xl flex flex-col justify-start">
-                  <p className="  font-semibold max-w-3xl pt-1">
+                  <p className="md:text-xl text-base font-semibold max-w-3xl pt-1">
                     熟悉演算法與系統設計
                   </p>
-                  <p className="  font-semibold max-w-3xl pt-1">
+                  <p className="md:text-xl text-base font-semibold max-w-3xl pt-1">
                     北美FAANG大廠資深軟體工程師
                   </p>
-                  <p className="  font-semibold max-w-3xl pt-1">
+                  <p className="md:text-xl text-base font-semibold max-w-3xl pt-1">
                     累積1000+演算法題解，掌握各類題型要點
                   </p>
-                  <p className="  font-semibold max-w-3xl pt-1">
+                  <p className="md:text-xl text-base font-semibold max-w-3xl pt-1">
                     豐富面試輔導經驗，提供清晰且實用的針對性輔導
                   </p>
                 </div>
@@ -261,24 +273,24 @@ function App() {
         />
         <Collapse
           title="提供什麼就業相關的幫助嗎？"
-          content="提供模擬面試 履歷健檢 面試安排 面試技巧(演算法 系統設計 BQ 薪資 等等) 面試陪跑"
+          content="提供模擬面試 履歷健檢 面試安排 面試技巧(演算法 系統設計 BQ 薪資 等等) 面試陪跑和內推資源分享"
         />
 
         <div className="w-full">
-          <div className="w-full py-32 flex flex-col items-center">
+          <div className="w-full md:py-32 py-10 flex flex-col items-center">
             <p className="text-xl md:text-2xl font-extrabold pt-5">
               針對進入一線外商大廠的工程師
             </p>
             <ul className="list-disc text-left text-xl md:text-2xl font-semibold">
-              <li className="pt-5">系統教學</li>
-              <li className="pt-5">任務系統</li>
-              <li className="pt-5">短期衝刺</li>
-              <li className="pt-5">模擬面試</li>
-              <li className="pt-5">面試陪跑</li>
-              <li className="pt-5">內推分享</li>
+              <li className="md:pt-5 pt-4">系統教學</li>
+              <li className="md:pt-5 pt-4">任務系統</li>
+              <li className="md:pt-5 pt-4">短期衝刺</li>
+              <li className="md:pt-5 pt-4">模擬面試</li>
+              <li className="md:pt-5 pt-4">面試陪跑</li>
+              <li className="md:pt-5 pt-4">內推分享</li>
             </ul>
             <button
-              className="button mt-16 rounded-2xl shadow-md max-w-min font-bold whitespace-nowrap text-2xl"
+              className="button mt-16 rounded-2xl shadow-md max-w-min font-bold whitespace-nowrap md:text-2xl text-xl"
               onClick={(event) => {
                 event.preventDefault();
                 window.open("https://page.line.me/428navbh");
