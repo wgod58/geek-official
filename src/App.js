@@ -54,20 +54,20 @@ function App() {
       <div className="Content pt-14">
         <div className="background-container flex flex-col items-center w-full ">
           <div className="text-content w-full md:py-48 py-6">
-            <p className="text-xl md:text-3xl md:py-4 py-2 font-extrabold">
+            <p className="text-xl md:text-3xl md:py-4 py-2 font-semibold">
               吉客學院
             </p>
-            <p className="text-xl md:text-3xl font-extrabold md:py-4 py-2">
+            <p className="text-xl md:text-3xl font-semibold md:py-4 py-2">
               FAANG講師 手把手系統化教學
             </p>
-            <p className="text-xl md:text-2xl md:py-4 py-2 font-extrabold">
+            <p className="text-xl md:text-2xl md:py-4 py-2 font-semibold">
               軟體工程師 x 職涯規劃 x 提升競爭力
             </p>
-            <p className="text-xl md:text-2xl md:py-4 py-2 font-extrabold">
+            <p className="text-xl md:text-2xl md:py-4 py-2 font-semibold">
               針對想進入一線外商的工程師
             </p>
             <button
-              className="button mt-4 rounded-2xl shadow-md max-w-min font-bold whitespace-nowrap md:text-2xl text-xl"
+              className="button mt-4 rounded-2xl shadow-md max-w-min font-semibold whitespace-nowrap md:text-2xl text-xl"
               onClick={(event) => {
                 event.preventDefault();
                 window.open("https://page.line.me/428navbh");
@@ -290,7 +290,7 @@ function App() {
               <li className="md:pt-5 pt-4">內推分享</li>
             </ul>
             <button
-              className="button mt-16 rounded-2xl shadow-md max-w-min font-bold whitespace-nowrap md:text-2xl text-xl"
+              className="button mt-16 rounded-2xl shadow-md max-w-min font-semibold whitespace-nowrap md:text-2xl text-xl"
               onClick={(event) => {
                 event.preventDefault();
                 window.open("https://page.line.me/428navbh");
